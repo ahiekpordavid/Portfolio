@@ -4,7 +4,7 @@ import langIcons from "../../media/langIcons2.png";
 
 const Home = () => {
   return (
-    <div className="Home">
+    <div className="Home" id="home">
       <div className="homeText">
         <h3>
           <small>Hello! </small>  I'm <span>David</span>

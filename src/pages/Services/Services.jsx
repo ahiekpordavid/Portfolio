@@ -3,6 +3,7 @@ import "./Services.css";
 import api from "../../media/api.png";
 import code from "../../media/code.png";
 import responsive from "../../media/responsive.png";
+import translate from "../../media/translate.png";
 
 const Services = () => {
   const data = [
@@ -24,9 +25,15 @@ const Services = () => {
       description:
         "Designing and coding web interfaces that adapt to various screen sizes and devices (responsive design)",
     },
+    {
+      icon: <img src={translate} alt="translate"  className="skillIcons"/>,
+      name: "Internationalization (i18n) and Localization (l10n)",
+      description:
+     " Implementing support for multiple languages and regions in web applications",
+    },
   ];
   return (
-    <div className="skill">
+    <div className="skill" id="skills">
       <h1>My Skills</h1>
       <div className="skillContainer">
         {data.map((item) => (

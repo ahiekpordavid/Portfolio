@@ -13,11 +13,11 @@ const Navbar = () => {
       <div className="Navbar">
         <img src={logo} alt="Logo" className="logo" />
         <div className="largeScreenMenus">
-          <Link className="menuItem">Home</Link>
-          <Link className="menuItem">About</Link>
-          <Link className="menuItem">Skills</Link>
-          <Link className="menuItem">Portfolio</Link>
-          <Link className="menuItem">Contact</Link>
+          <Link className="menuItem" to="home" spy={true}smooth={true}duration={500}>Home</Link>
+          <Link className="menuItem"to="about" spy={true}smooth={true}duration={500}>About</Link>
+          <Link className="menuItem" to="skills" spy={true}smooth={true}duration={500}>Skills</Link>
+          <Link className="menuItem" to="portfolio" spy={true}smooth={true}duration={500}>Portfolio</Link>
+          <Link className="menuItem"to="contact" spy={true}smooth={true}duration={500}>Contact</Link>
         </div>
         <div className="toggleMenus" onClick={handleMenuToggle}>
           <CgMenuGridO />
