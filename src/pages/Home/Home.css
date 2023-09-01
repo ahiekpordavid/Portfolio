@@ -1,0 +1,85 @@
+.Home {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: 200px 140px;
+  align-items: flex-end ;
+}
+.homeText h3 {
+  font-size: 42px;
+  line-height: 20px;
+}
+.homeText small {
+  font-size: 32px;
+  font-weight: 400;
+}
+.homeText span:nth-child(2) {
+  color: rgb(8, 210, 11);
+}
+.homeText p {
+  width: 694px;
+  line-height: 30px;
+  font-size: 16px;
+}
+.langIcons {
+  object-fit: contain;
+  position: fixed;
+  z-index: -1;
+  top: 200px;
+  right: 140px;
+  width: 700px;
+}
+@media screen and (max-width: 1024px) {
+  .langIcons {
+    width: 500px;
+  }
+  .Home {
+    padding: 200px 100px;
+  }
+  @media screen and (max-width: 870px) {
+    .Home {
+      padding: 200px 80px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .langIcons {
+      top: 150px;
+      right: 120px;
+      width: 300px;
+    }
+    .homeText h3 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    .homeText small {
+      font-size: 22px;
+      font-weight: 400;
+    }
+    .homeText p {
+      width: 100%;
+      line-height: 30px;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .Home {
+      padding-top: 200px;
+      padding-bottom: 300px;
+    }
+    .langIcons {
+     width: 250px;
+       top: 600px;
+       right: 80px;
+      }
+  }
+  @media screen and (max-width: 375px) {
+    .Home {
+      padding-top: 200px;
+      padding-bottom: 300px;
+    }
+    .langIcons {
+        top: 600px;
+        right: 40px;
+       }
+  }
+}
