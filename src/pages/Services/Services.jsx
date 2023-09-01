@@ -37,7 +37,7 @@ const Services = () => {
       <h1>My Skills</h1>
       <div className="skillContainer">
         {data.map((item) => (
-          <div className="skillItem">
+          <div className="skillItem" key={item.name}>
             <div>{item.icon}</div>
             <h2>{item.name}</h2>
             <p>{item.description}</p>

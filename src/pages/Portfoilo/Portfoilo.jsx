@@ -43,7 +43,7 @@ const Portfoilo = () => {
       <h1>My Work</h1>
       <div className="portfolioContainer">
         {data.map((item) => (
-          <div className="portfolioItem">
+          <div className="portfolioItem"  key={item.name}>
             <img src={item.icon} alt="" className="portfolioImage" />
             <div className="portfolioImageContent">
               <h2>{item.name}</h2>

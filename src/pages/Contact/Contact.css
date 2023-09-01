@@ -1,0 +1,128 @@
+.contacts {
+  display: flex;
+  flex-direction: row;
+  margin: 80px 140px;
+  background-color: black;
+}
+.contact {
+  flex: 1;
+}
+.contact h1 {
+  font-size: 48px;
+}
+.contactTrad {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contactTrad p {
+  font-size: 16px;
+}
+.socials {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.contactSocials .socials {
+  font-size: 30px;
+  margin-right: 30px;
+}
+.contactSocials {
+  margin: 20px 0px;
+}
+
+.contact button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white;
+  background: rgb(6, 186, 9);
+  margin-top: 10px;
+}
+.contactMessage {
+  flex: 3;
+  padding-top:35px ;
+  margin-left: 100px;
+}
+.contactMessage form{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+
+}
+.contactMessage input {
+    width: 96%;
+background-color:  rgb(20, 20, 20);
+outline: none;
+border: none;
+margin-bottom: 20px;
+padding: 10px 20px;
+color: white;
+font-size: 16px;
+height: 30px;
+border-radius: 5px;
+}
+.contactMessage textarea {
+background-color:  rgb(20, 20, 20);
+outline: none;
+border: none;
+margin-bottom: 20px;
+padding: 20px;
+color: white;
+font-size: 16px;
+min-height: 150px;
+max-height:150px;
+min-width: 96%;
+border-radius: 5px;
+}
+.contactMessage textarea {
+background-color:  rgb(20, 20, 20);
+outline: none;
+border: none;
+margin-bottom: 20px;
+padding: 20px;
+color: white;
+font-size: 16px;
+min-height: 150px;
+max-height:150px;
+min-width: 96%;
+border-radius: 5px;
+}
+.contactMessage button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 0px;
+    width: 160px;
+    font-size: 16px;
+    color: white;
+    background: rgb(6, 186, 9);
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1024px){
+    .contacts {
+        margin: 80px 100px;
+      }
+      .portfolioItem {
+        width: 290px;
+      }
+}
+@media screen and (max-width:870px){
+    .contacts {
+        margin: 80px 80px;
+      }
+      .portfolioItem {
+        width: 100%;
+      }
+}
+@media screen and (max-width:768px){
+    .contacts {
+        margin: 80px 40px;
+        flex-direction: column;
+      }
+      .contactMessage {
+        margin-left: 0px;
+      }
+}
