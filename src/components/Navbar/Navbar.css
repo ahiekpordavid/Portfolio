@@ -67,6 +67,9 @@
       }
 }
 @media screen and (max-width:768px){
+    .Navbar {
+        padding: 20px 40px;
+      }
     .largeScreenMenus{
         display: none;
     }
