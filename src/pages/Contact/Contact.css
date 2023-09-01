@@ -41,88 +41,87 @@
   margin-top: 10px;
 }
 .contactMessage {
+  width: 100%;
   flex: 3;
-  padding-top:35px ;
+  padding-top: 35px;
   margin-left: 100px;
 }
-.contactMessage form{
-  flex: 3;
+.contactMessage form {
   display: flex;
   flex-direction: column;
-
 }
 .contactMessage input {
-    width: 96%;
-background-color:  rgb(20, 20, 20);
-outline: none;
-border: none;
-margin-bottom: 20px;
-padding: 10px 20px;
-color: white;
-font-size: 16px;
-height: 30px;
-border-radius: 5px;
+  width: 96%;
+  background-color: rgb(20, 20, 20);
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  height: 30px;
+  border-radius: 5px;
 }
 .contactMessage textarea {
-background-color:  rgb(20, 20, 20);
-outline: none;
-border: none;
-margin-bottom: 20px;
-padding: 20px;
-color: white;
-font-size: 16px;
-min-height: 150px;
-max-height:150px;
-min-width: 96%;
-border-radius: 5px;
+  background-color: rgb(20, 20, 20);
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+  min-height: 150px;
+  max-height: 150px;
+  min-width: 96%;
+  border-radius: 5px;
 }
 .contactMessage textarea {
-background-color:  rgb(20, 20, 20);
-outline: none;
-border: none;
-margin-bottom: 20px;
-padding: 20px;
-color: white;
-font-size: 16px;
-min-height: 150px;
-max-height:150px;
-min-width: 96%;
-border-radius: 5px;
+  background-color: rgb(20, 20, 20);
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+  min-height: 150px;
+  max-height: 150px;
+  min-width: 96%;
+  border-radius: 5px;
 }
 .contactMessage button {
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 0px;
-    width: 160px;
-    font-size: 16px;
-    color: white;
-    background: rgb(6, 186, 9);
-    margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 0px;
+  width: 160px;
+  font-size: 16px;
+  color: white;
+  background: rgb(6, 186, 9);
+  margin-top: 10px;
 }
 
-@media screen and (max-width:1024px){
-    .contacts {
-        margin: 80px 100px;
-      }
-      .portfolioItem {
-        width: 290px;
-      }
+@media screen and (max-width: 1024px) {
+  .contacts {
+    margin: 80px 100px;
+  }
+  .portfolioItem {
+    width: 290px;
+  }
 }
-@media screen and (max-width:870px){
-    .contacts {
-        margin: 80px 80px;
-      }
-      .portfolioItem {
-        width: 100%;
-      }
+@media screen and (max-width: 870px) {
+  .contacts {
+    margin: 80px 80px;
+  }
+  .portfolioItem {
+    width: 100%;
+  }
 }
-@media screen and (max-width:768px){
-    .contacts {
-        margin: 80px 40px;
-        flex-direction: column;
-      }
-      .contactMessage {
-        margin-left: 0px;
-      }
+@media screen and (max-width: 768px) {
+  .contacts {
+    margin: 80px 40px;
+    flex-direction: column;
+  }
+  .contactMessage {
+    margin-left: 0px;
+  }
 }
