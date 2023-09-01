@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="largeScreenMenus">
           <Link className="menuItem">Home</Link>
           <Link className="menuItem">About</Link>
-          <Link className="menuItem">Service</Link>
+          <Link className="menuItem">Skills</Link>
           <Link className="menuItem">Portfolio</Link>
           <Link className="menuItem">Contact</Link>
         </div>
@@ -31,7 +31,7 @@ const Navbar = () => {
               About
             </Link>
             <Link className="menuItemSmall" onClick={handleMenuToggle}>
-              Service
+              Skills
             </Link>
             <Link className="menuItemSmall" onClick={handleMenuToggle}>
               Portfolio

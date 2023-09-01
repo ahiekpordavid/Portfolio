@@ -69,10 +69,11 @@
       height: max-content;
       flex-direction: column;
       padding-bottom: 40px;
+      padding-top: 100px;
       align-items: center;
     }
     .langIcons {
-        margin-top:20px ;
+      margin-top:20px ;
       position: inherit;
       z-index: 0;
       top: 0px;
