@@ -19,10 +19,12 @@
 .aboutText{
     flex: 1.2;
 }
-.aboutText a{
-   text-decoration: none;
+.aboutText button{
+   border: none;
    color: rgb(6, 186, 9);
    font-size: 14px;
+   background: transparent;
+   cursor: pointer;
 }
 .meImage{
     margin-right: 40px;
