@@ -24,19 +24,19 @@ const Navbar = () => {
         </div>
         {toggleMenu && (
           <div className="smallScreenMenus">
-            <Link className="menuItemSmall" onClick={handleMenuToggle}>
+            <Link className="menuItemSmall" onClick={handleMenuToggle} to="home" spy={true}smooth={true}duration={500}>
               Home
             </Link>
-            <Link className="menuItemSmall" onClick={handleMenuToggle}>
+            <Link className="menuItemSmall" onClick={handleMenuToggle}to="about" spy={true}smooth={true}duration={500}>
               About
             </Link>
-            <Link className="menuItemSmall" onClick={handleMenuToggle}>
+            <Link className="menuItemSmall" onClick={handleMenuToggle}to="skills" spy={true}smooth={true}duration={500}>
               Skills
             </Link>
-            <Link className="menuItemSmall" onClick={handleMenuToggle}>
+            <Link className="menuItemSmall" onClick={handleMenuToggle}to="portfolio" spy={true}smooth={true}duration={500}>
               Portfolio
             </Link>
-            <Link className="menuItemSmall" onClick={handleMenuToggle}>
+            <Link className="menuItemSmall" onClick={handleMenuToggle}to="contact" spy={true}smooth={true}duration={500}>
               Contact
             </Link>
           </div>
