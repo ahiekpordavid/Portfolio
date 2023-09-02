@@ -2,9 +2,10 @@ import React from 'react'
 import './Contact.css'
 import {SiMinutemailer,SiInstagram,SiTwitter} from 'react-icons/si'
 import {PiPhoneCallFill} from 'react-icons/pi'
-import { FormattedMessage } from 'react-intl'
+import { FormattedMessage ,useIntl } from 'react-intl'
 
 const Contact = () => {
+    const intl = useIntl(); 
   return (
     <div className='contacts'>
         <div className='contact'>
@@ -25,9 +26,9 @@ const Contact = () => {
         </div>
         <div className='contactMessage'>
             <form action="" >
-                <input type="text" placeholder={<FormattedMessage id="contact.placeholder.name" />}/>
-                <input type="email" placeholder={<FormattedMessage id="contact.placeholder.email" />}/>
-                <textarea name="" id="" cols="30" rows="10" placeholder={<FormattedMessage id="contact.placeholder.message" />}></textarea>
+                <input type="text" placeholder={intl.formatMessage({ id: "contact.placeholder.name" })}/>
+                <input type="email" placeholder={intl.formatMessage({ id: "contact.placeholder.email" })}/>
+                <textarea name="" id="" cols="30" rows="10" placeholder={intl.formatMessage({ id: "contact.placeholder.message" })}></textarea>
                 <button><FormattedMessage id="contact.button.submit" /></button>
             </form>
         </div>

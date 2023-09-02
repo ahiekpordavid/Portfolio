@@ -10,6 +10,11 @@ import Services from "./pages/Services/Services";
 import { IntlProvider } from "react-intl";
 import messages_en from "./utils/lang/locales/en_US.json";
 import messages_fr from "./utils/lang/locales/fr_FR.json";
+import messages_es from "./utils/lang/locales/es_ES.json";
+import messages_fi from "./utils/lang/locales/fi_FI.json";
+import messages_nl from "./utils/lang/locales/nl_NL.json";
+import messages_pt from "./utils/lang/locales/pt_PT.json";
+import messages_zh from "./utils/lang/locales/zh_ZH.json";
 
 function App() {
   const [locale, setLocale] = useState("en");
@@ -17,6 +22,11 @@ function App() {
   const messages = {
     en: messages_en,
     fr: messages_fr,
+    es:messages_es,
+    fi:messages_fi,
+    nl:messages_nl,
+    pt:messages_pt,
+    zh:messages_zh,
   };
   const handleSelectLanguage = (selectedLocale) => {
     setLocale(selectedLocale);

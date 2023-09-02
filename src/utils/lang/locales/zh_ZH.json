@@ -1,0 +1,57 @@
+{
+    "navbar.home": "主页",
+    "navbar.about": "关于",
+    "navbar.skills": "技能",
+    "navbar.portfolio": "作品集",
+    "navbar.contact": "联系",
+  
+    "home.title.hello": "你好！",
+    "home.title.i'm": "我是",
+    "home.title.name": "大卫",
+    "home.title.job": "来自加纳的前端开发工程师",
+    "home.about": "我相信出色的设计和功能开发相辅相成。我的目标是将想法转化为令人惊叹且用户友好的网站和应用程序，不仅看起来令人赞叹，而且还能提供出色的结果。",
+  
+    "about.title": "关于我",
+    "about.aboutText": "我是一名专注于打造卓越网络体验的前端工程师。拥有计算机科学背景和对设计的热爱。我专注于将想法转化为交互式、用户友好的网络应用程序。我之所以与众不同，是因为我的多才多艺，还包括后端开发。我精通Express.js和MongoDB，可以创建强大的RESTful API，支持前端和后端之间无缝的交互。",
+    "about.experience.title": "经验",
+    "about.experience.YYYY1": "YYYY",
+    "about.experience.work1": "工作1",
+    "about.experience.YYYY2": "YYYY",
+    "about.experience.work2": "工作2",
+    "about.education.title": "教育",
+    "about.education.YYYY1": "YYYY",
+    "about.education.school1": "学校1",
+    "about.education.YYYY2": "YYYY",
+    "about.education.school2": "学校2",
+    "about.cv": "下载简历",
+  
+    "service.title": "我的技能",
+    "service.frontendDevelopment.name": "前端开发",
+    "service.frontendDevelopment.description": "使用HTML、CSS、JavaScript或React JavaScript框架构建复杂的用户界面，用于网站和具有应用程序般体验的Web应用。",
+    "service.apiIntegration.name": "API集成",
+    "service.apiIntegration.description": "与后端API（RESTful或GraphQL）通信，获取并显示数据。",
+    "service.responsiveDesign.name": "响应式设计",
+    "service.responsiveDesign.description": "设计和编码适应各种屏幕尺寸和设备的Web界面（响应式设计）。",
+    "service.i18n.name": "国际化（i18n）和本地化（l10n）",
+    "service.i18n.description": "在Web应用程序中实现对多种语言和地区的支持。",
+    "service.backendDevelopment.name": "后端开发",
+    "service.backendDevelopment.description": "使用Express.js和MongoDB构建RESTful API，用于存储和检索数据。",
+    "service.ui/ux.name": "UI/UX原则",
+    "service.ui/ux.description": "",
+  
+    "portfolio.title": "我的作品",
+    "portfolio.portfolioWebsite.name": "作品集网站",
+    "portfolio.portfolioWebsite.description": "使用React JavaScript框架构建复杂的用户界面，用于网站和具有应用程序般体验的Web应用。",
+  
+    "contact.title": "联系我",
+    "contact.email": "ahiekpordavid@gmail.com",
+    "contact.phone": "+233 20 346 5176",
+    "contact.cv": "下载简历",
+    "contact.placeholder.name": "全名",
+    "contact.placeholder.email": "电子邮件",
+    "contact.placeholder.message": "您的留言",
+    "contact.button.submit": "提交",
+  
+    "footer.thanks": "谢谢！！！"
+  }
+  

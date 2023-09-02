@@ -27,6 +27,11 @@ const LanguageSelector = ({ onSelectLanguage }) => {
   const languageOptions = [
     { value: "en", label: isSmallScreen ? "EN" : "English" },
     { value: "fr", label: isSmallScreen ? "FR" : "Français" },
+    { value: "es", label: isSmallScreen ? "ES" : "Español" }, 
+    { value: "pt", label: isSmallScreen ? "PT" : "Português" },
+    { value: "nl", label: isSmallScreen ? "NL" : "Nederlands" },
+    { value: "fi", label: isSmallScreen ? "FI" : "Finnish" },
+    { value: "zh", label: isSmallScreen ? "中文" : "Chinese" }, 
   ];
 
   return (
