@@ -2,32 +2,33 @@ import React from 'react'
 import './Contact.css'
 import {SiMinutemailer,SiInstagram,SiTwitter} from 'react-icons/si'
 import {PiPhoneCallFill} from 'react-icons/pi'
+import { FormattedMessage } from 'react-intl'
 
 const Contact = () => {
   return (
     <div className='contacts'>
         <div className='contact'>
-            <h1>Contact Me</h1>
+            <h1><FormattedMessage id="contact.title" /></h1>
             <div className='contactTrad'>
                 <SiMinutemailer className='socials'/>
-                <p>ahiekpordavid@gmail.com</p>
+                <p><FormattedMessage id="contact.email" /></p>
             </div>
             <div className='contactTrad'>
                 <PiPhoneCallFill className='socials' />
-                <p>+233 20 346 5176</p>
+                <p><FormattedMessage id="contact.phone" /></p>
             </div>
             <div className='contactSocials'>
                 <SiInstagram className='socials'/>
                 <SiTwitter className='socials'/>
             </div>
-            <button> Download CV</button>
+            <button> <FormattedMessage id="contact.cv" /></button>
         </div>
         <div className='contactMessage'>
             <form action="" >
-                <input type="text" placeholder='Full Name'/>
-                <input type="email" placeholder='Email'/>
-                <textarea name="" id="" cols="30" rows="10" placeholder='Your message'></textarea>
-                <button>Submit</button>
+                <input type="text" placeholder={<FormattedMessage id="contact.placeholder.name" />}/>
+                <input type="email" placeholder={<FormattedMessage id="contact.placeholder.email" />}/>
+                <textarea name="" id="" cols="30" rows="10" placeholder={<FormattedMessage id="contact.placeholder.message" />}></textarea>
+                <button><FormattedMessage id="contact.button.submit" /></button>
             </form>
         </div>
     </div>

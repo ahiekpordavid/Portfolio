@@ -4,10 +4,52 @@
   "navbar.skills": "Compétences",
   "navbar.portfolio": "Portfolio",
   "navbar.contact": "Contact",
-  
+
   "home.title.hello": "Salut !",
   "home.title.i'm": "Je suis",
   "home.title.name": "David",
   "home.title.job": "un développeur Frontend du Ghana",
-  "home.about": "Je crois que le design exceptionnel et le développement fonctionnel vont de pair. Mon objectif est de transformer les idées en sites Web et applications à la fois magnifiques et conviviaux, qui non seulement ont un aspect incroyable, mais qui offrent également des résultats exceptionnels."
-  }
+  "home.about": "Je crois que le design exceptionnel et le développement fonctionnel vont de pair. Mon objectif est de transformer les idées en sites Web et applications à la fois magnifiques et conviviaux, qui non seulement ont un aspect incroyable, mais qui offrent également des résultats exceptionnels.",
+
+  "about.title": "À propos de moi",
+  "about.aboutText": "Je suis un ingénieur frontend dévoué passionné par la création d'expériences web remarquables. Avec une formation en informatique et un amour pour le design, je me spécialise dans la transformation des idées en applications web interactives et conviviales. Ce qui me distingue, c'est ma polyvalence, qui s'étend également au développement backend. Je maîtrise Express.js et MongoDB, ce qui me permet de créer des API REST robustes alimentant des interactions transparentes entre le frontend et le backend.",
+  "about.experience.title": "Expérience",
+  "about.experience.YYYY1": "AAAA",
+  "about.experience.work1": "Travail 1",
+  "about.experience.YYYY2": "AAAA",
+  "about.experience.work2": "Travail 2",
+  "about.education.title": "Éducation",
+  "about.education.YYYY1": "AAAA",
+  "about.education.school1": "École 1",
+  "about.education.YYYY2": "AAAA",
+  "about.education.school2": "École 2",
+  "about.cv": "Télécharger le CV",
+
+  "service.title": "Mes compétences",
+  "service.frontendDevelopment.name": "Développement frontend",
+  "service.frontendDevelopment.description": "Utilisation d'HTML, de CSS, de JavaScript ou de frameworks React JavaScript pour la création d'interfaces utilisateur complexes pour les sites web et les applications web offrant des expériences similaires à celles des applications.",
+  "service.apiIntegration.name": "Intégration d'API",
+  "service.apiIntegration.description": "Communication avec des API backend (RESTful ou GraphQL) pour récupérer et afficher des données.",
+  "service.responsiveDesign.name": "Design adaptatif",
+  "service.responsiveDesign.description": "Conception et codage d'interfaces web qui s'adaptent à différentes tailles d'écran et appareils (design adaptatif).",
+  "service.i18n.name": "Internationalisation (i18n) et localisation (l10n)",
+  "service.i18n.description": "Mise en place du support de plusieurs langues et régions dans les applications web.",
+  "service.backendDevelopment.name": "Développement backend",
+  "service.backendDevelopment.description": "Construction d'API REST avec Express.js et MongoDB pour le stockage et la récupération de données.",
+  "service.ui/ux.name": "Principes de UI/UX",
+
+  "portfolio.title": "Mon travail",
+  "portfolio.portfolioWebsite.name": "Site web de portfolio",
+  "portfolio.portfolioWebsite.description": "Utilisation de frameworks React JavaScript pour la création d'interfaces utilisateur complexes pour les sites web et les applications web offrant des expériences similaires à celles des applications.",
+
+  "contact.title": "Contactez-moi",
+  "contact.email": "ahiekpordavid@gmail.com",
+  "contact.phone": "+233 20 346 5176",
+  "contact.cv": "Télécharger le CV",
+  "contact.placeholder.name": "Nom complet",
+  "contact.placeholder.email": "Email",
+  "contact.placeholder.message": "Votre message",
+  "contact.button.submit": "Envoyer",
+
+  "footer.thanks": "Merci !!!"
+}

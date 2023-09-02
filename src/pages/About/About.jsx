@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import me from "../../media/me1.png";
+import { FormattedMessage } from "react-intl";
 
 const About = () => {
   return (
@@ -9,42 +10,35 @@ const About = () => {
         <img src={me} alt="Me" className="meImage"/>
       </div>
       <div className="aboutText">
-        <h1>About Me</h1>
+        <h1><FormattedMessage id="about.title"/></h1>
         <p>
-          I'm a dedicated frontend engineer passionate about crafting remarkable
-          web experiences. With a background in computer science and a love for
-          design. I specialize in turning ideas into interactive,
-          user-friendly web applications. What sets me apart
-          is my versatile skill set, which extends to backend development. I'm
-          well-versed in Express.js and MongoDB, allowing me to create robust
-          RESTful APIs that power seamless interactions between the frontend and
-          backend.
+        <FormattedMessage id="about.aboutText"/>
         </p>
         <div className="aboutTabs">
             <div className="aboutTab">
-                <h3>Experience</h3>
+                <h3><FormattedMessage id="about.experience.title"/></h3>
                 <div>
-                    <h6>YYYY</h6>
-                    <p>Work</p>
+                    <h6><FormattedMessage id="about.experience.YYYY1"/></h6>
+                    <p><FormattedMessage id="about.experience.work1"/></p>
                 </div>
                 <div>
-                    <h6>YYYY</h6>
-                    <p>Work</p>
+                    <h6><FormattedMessage id="about.experience.YYYY2"/></h6>
+                    <p><FormattedMessage id="about.experience.work2"/></p>
                 </div>
             </div>
             <div className="aboutTab">
-                <h3>Education</h3>
+                <h3><FormattedMessage id="about.education.title"/></h3>
                 <div>
-                    <h6>YYYY</h6>
-                    <p>School</p>
+                    <h6><FormattedMessage id="about.education.YYYY1"/></h6>
+                    <p><FormattedMessage id="about.education.school1"/></p>
                 </div>
                 <div>
-                    <h6>YYYY</h6>
-                    <p>School</p>
+                    <h6><FormattedMessage id="about.education.YYYY1"/></h6>
+                    <p><FormattedMessage id="about.education.school2"/></p>
                 </div>
             </div>
         </div>
-        <button>Download CV</button>
+        <button><FormattedMessage id="about.cv"/></button>
       </div>
     </div>
   );
