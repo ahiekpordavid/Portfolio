@@ -50,7 +50,7 @@ const Portfoilo = () => {
               <h2>{item.name}</h2>
               <p>{item.description}</p>
               <div className="linkIcons">
-                <a href="https://github.com/ahiekpordavid/Portfolio" target="_blank" className="linkIcon">{item.gitLink}</a>
+                <a href="https://github.com/ahiekpordavid/Portfolio" target="_blank" rel="noreferrer" className="linkIcon">{item.gitLink}</a>
                 <div className="linkIcon">{item.appLink}</div>
               </div>
             </div>
