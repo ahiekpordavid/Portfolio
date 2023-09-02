@@ -3,11 +3,12 @@ import "./Portfoilo.css";
 import {BsGithub} from "react-icons/bs"
 import {BiLinkExternal} from "react-icons/bi"
 import translate from "../../media/OIP.jpeg";
+import portfolio from "../../media/portfolio.png";
 
 const Portfoilo = () => {
   const data = [
     {
-      icon: translate,
+      icon: portfolio,
       name: "Portfolio Website",
       description:
         "Using React JavaScript frameworks for building complex user interfaces for both websites and web apps with app-like experiences.",
@@ -49,7 +50,7 @@ const Portfoilo = () => {
               <h2>{item.name}</h2>
               <p>{item.description}</p>
               <div className="linkIcons">
-                <div className="linkIcon">{item.gitLink}</div>
+                <a href="https://github.com/ahiekpordavid/Portfolio" target="_blank" className="linkIcon">{item.gitLink}</a>
                 <div className="linkIcon">{item.appLink}</div>
               </div>
             </div>
