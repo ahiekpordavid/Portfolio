@@ -1,0 +1,13 @@
+{
+  "navbar.home":"Home",
+  "navbar.about":"About",
+  "navbar.skills":"Skills",
+  "navbar.portfolio":"Portfolio",
+  "navbar.contact":"Contact",
+ 
+  "home.title.hello":"Hello!",
+  "home.title.i'm":"I'm",
+  "home.title.name":"David",
+  "home.title.job":"a Frontend Developer From Ghana",
+  "home.about":"I believe that great design and functional development go hand-in-hand. My goal is to transform ideas into stunning, user-friendly websites and applications that not only look amazing but also deliver exceptional results."
+}

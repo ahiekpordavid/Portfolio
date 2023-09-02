@@ -1,0 +1,13 @@
+{
+  "navbar.home": "Accueil",
+  "navbar.about": "À propos",
+  "navbar.skills": "Compétences",
+  "navbar.portfolio": "Portfolio",
+  "navbar.contact": "Contact",
+  
+  "home.title.hello": "Salut !",
+  "home.title.i'm": "Je suis",
+  "home.title.name": "David",
+  "home.title.job": "un développeur Frontend du Ghana",
+  "home.about": "Je crois que le design exceptionnel et le développement fonctionnel vont de pair. Mon objectif est de transformer les idées en sites Web et applications à la fois magnifiques et conviviaux, qui non seulement ont un aspect incroyable, mais qui offrent également des résultats exceptionnels."
+  }

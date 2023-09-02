@@ -74,7 +74,7 @@
         display: none;
     }
     .toggleMenus {
-        display: block;
+        display: flex;
       }
 }
 @media screen and (max-width:375px){
