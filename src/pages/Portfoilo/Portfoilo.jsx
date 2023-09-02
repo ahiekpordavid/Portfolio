@@ -12,14 +12,14 @@ const Portfoilo = () => {
       name: "Portfolio Website",
       description:
         "Using React JavaScript frameworks for building complex user interfaces for both websites and web apps with app-like experiences.",
-      gitLink: <BsGithub/>,
+      gitLink: "https://github.com/ahiekpordavid/Portfolio",
     },
     {
         icon: translate,
       name: "API Integration",
       description:
         "Communicating with backend APIs (RESTful or GraphQL) to fetch and display data.",
-      gitLink: <BsGithub/>,
+      gitLink: "",
       appLink: <BiLinkExternal/>,
     },
     {
@@ -27,7 +27,7 @@ const Portfoilo = () => {
       name: "Responsive Design",
       description:
         "Designing and coding web interfaces that adapt to various screen sizes and devices (responsive design)",
-      gitLink: <BsGithub/>,
+      gitLink: "",
       appLink: <BiLinkExternal/>,
     },
     {
@@ -35,7 +35,7 @@ const Portfoilo = () => {
       name: "Internationalization (i18n) and Localization (l10n)",
       description:
         "Implementing support for multiple languages and regions in web applications",
-      gitLink: <BsGithub/>,
+      gitLink: "",
       appLink: <BiLinkExternal/>,
     },
   ];
@@ -50,7 +50,7 @@ const Portfoilo = () => {
               <h2>{item.name}</h2>
               <p>{item.description}</p>
               <div className="linkIcons">
-                <a href="https://github.com/ahiekpordavid/Portfolio" target="_blank" rel="noreferrer" className="linkIcon">{item.gitLink}</a>
+                <a href={item.gitLink} target="_blank" rel="noreferrer" className="linkIcon"><BsGithub/></a>
                 <div className="linkIcon">{item.appLink}</div>
               </div>
             </div>
