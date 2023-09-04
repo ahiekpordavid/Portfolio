@@ -29,9 +29,9 @@ const Services = () => {
     },
     {
       icon: <img src={translate} alt="translate"  className="skillIcons"/>,
-      name: <FormattedMessage id="aservice.i18n.name"/>,
+      name: <FormattedMessage id="service.i18n.name"/>,
       description:
-      <FormattedMessage id="aservice.i18n.description"/>
+      <FormattedMessage id="service.i18n.description"/>
     },
     {
       icon: <img src={code} alt="translate"  className="skillIcons"/>,
