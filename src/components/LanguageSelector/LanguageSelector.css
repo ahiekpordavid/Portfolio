@@ -10,13 +10,12 @@
 .language-dropdown {
   padding:8px 12px;
   appearance: none;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: rgb(2, 162, 5);
+  border:none;
   outline: none;
-
   border-radius: 4px;
   font-size: 14px;
-  color: #333;
+  color: #ffffff;
   cursor: pointer;
 }
 

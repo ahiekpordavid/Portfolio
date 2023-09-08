@@ -11,7 +11,7 @@
 .portfolioContainer {
   width: 100%;
   display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 .portfolioItem {
   position: relative;
@@ -80,6 +80,16 @@ color: white;
 .linkIcon:hover {
   cursor: pointer;
   color: rgb(6, 186, 9);
+}
+@media screen and (max-width: 1660px) {
+  .portfolioItem {
+    width: 300px;
+  }
+  .portfolioContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
 }
 @media screen and (max-width: 1360px) {
   .portfolioItem {
