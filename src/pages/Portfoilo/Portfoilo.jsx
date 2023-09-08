@@ -21,23 +21,7 @@ const Portfoilo = () => {
       description: <FormattedMessage id="service.apiIntegration.description" />,
       gitLink: "",
       appLink: <BiLinkExternal />,
-    },
-    {
-      icon: translate,
-      name: <FormattedMessage id="service.responsiveDesign.name" />,
-      description: 
-        <FormattedMessage id="service.responsiveDesign.description" />,
-      gitLink: "",
-      appLink: <BiLinkExternal />,
-    },
-    {
-      icon: translate,
-      name: <FormattedMessage id="service.backendDevelopment.name" />,
-      description: 
-        <FormattedMessage id="service.backendDevelopment.description" />,
-      gitLink: "",
-      appLink: <BiLinkExternal />,
-    },
+    }
   ];
   return (
     <div className="portfolio" id="portfolio">
