@@ -3,8 +3,8 @@
   flex-direction: column;
   margin: 80px 140px;
   padding-bottom: 80px;
-  background: rgba(0, 0, 0, 0.90);
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.20) inset;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2) inset;
   backdrop-filter: blur(10px);
 }
 .portfolio h1 {
@@ -22,12 +22,33 @@
   padding: 30px;
   border-radius: 10px;
   margin-top: 50px;
-  z-index: 0;
+  z-index: 1;
   border: 1px solid rgb(68, 68, 68);
-
+  background: none;
+  transition-delay: 0.8s;
+  overflow: hidden;
+}
+.portfolioItem:hover {
+  color: white;
+}
+.portfolioItem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(44, 82, 47, 0.8);
+  width: 100%;
+  height: 0%;
+  z-index: 2;
+  transition: 1s;
+}
+.portfolioItem:hover::before,
+.portfolioImageContent:hover {
+  height: 100%;
 }
 .portfolioItem:hover .portfolioImageContent {
   display: flex;
+  transition: 0.8s;
 }
 .portfolioImage {
   border-radius: 10px;
@@ -39,27 +60,21 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 0;
 }
 .portfolioImageContent {
   display: none;
   flex-direction: column;
   align-items: center;
-  z-index: 2;
+  z-index: 5;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   padding: 30px;
+}
 
-}
-.portfolioImageContent:hover {
-  display: flex;
-  background: rgba(0, 0, 0, 0.8);
-  transition: background 0.3s ease-out, color 0.3s ease-out;
-  transition-delay: 0.1s;
-}
 .portfolioImageContent h2 {
   font-size: 28px;
 }
@@ -74,7 +89,7 @@
 .linkIcon {
   font-size: 25px;
   margin: 10px;
-color: white;
+  color: white;
 }
 .linkIcon:hover {
   cursor: pointer;

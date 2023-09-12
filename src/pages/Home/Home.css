@@ -66,16 +66,17 @@
   }
   @media screen and (max-width: 480px) {
     .Home {
-      height: max-content;
+      height: auto;
       flex-direction: column;
       padding-bottom: 40px;
       padding-top: 100px;
       align-items: center;
+      position: relative;
     }
     .langIcons {
       margin-top: 20px;
-      position: inherit;
-      z-index: 0;
+      position:sticky;
+      z-index: 2;
       top: 0px;
       right: 0px;
     }
