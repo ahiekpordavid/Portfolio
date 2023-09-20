@@ -21,11 +21,11 @@
 .aboutText {
   flex: 1.2;
 }
-.aboutText button {
+.aboutText a {
   border: none;
+  text-decoration: none;
   color: rgb(6, 186, 9);
   font-size: 14px;
-  background: transparent;
   cursor: pointer;
 }
 .meImage {
@@ -40,6 +40,14 @@
 }
 .aboutTab {
   margin-right: 80px;
+}
+.aboutTab h6{
+  margin-bottom: -15px;
+}
+.aboutTab p{
+  font-weight: 800;
+  margin-bottom: -15px;
+  color: rgb(6, 186, 9);
 }
 @media screen and (max-width: 1024px) {
   .about {

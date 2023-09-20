@@ -3,6 +3,7 @@ import './Contact.css'
 import {SiMinutemailer,SiInstagram,SiTwitter} from 'react-icons/si'
 import {PiPhoneCallFill} from 'react-icons/pi'
 import { FormattedMessage ,useIntl } from 'react-intl'
+import CV from "../../media/David Kwashie Ahiekpor.pdf"
 
 const Contact = () => {
     const intl = useIntl(); 
@@ -22,7 +23,7 @@ const Contact = () => {
                 <SiInstagram className='socials'/>
                 <SiTwitter className='socials'/>
             </div>
-            <button> <FormattedMessage id="contact.cv" /></button>
+            <a href={CV} download><FormattedMessage id="contact.cv" /></a>
         </div>
         <div className='contactMessage'>
             <form action="" >

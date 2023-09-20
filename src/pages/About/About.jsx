@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import me from "../../media/me1.png";
+import CV from "../../media/David Kwashie Ahiekpor.pdf"
 import { FormattedMessage } from "react-intl";
 
 const About = () => {
@@ -31,14 +32,11 @@ const About = () => {
                 <div>
                     <h6><FormattedMessage id="about.education.YYYY1"/></h6>
                     <p><FormattedMessage id="about.education.school1"/></p>
-                </div>
-                <div>
-                    <h6><FormattedMessage id="about.education.YYYY1"/></h6>
-                    <p><FormattedMessage id="about.education.school2"/></p>
+                    <h4>Bachelor of Science in Computer Science</h4>
                 </div>
             </div>
         </div>
-        <button><FormattedMessage id="about.cv"/></button>
+        <a href={CV} download><FormattedMessage id="about.cv"/></a>
       </div>
     </div>
   );
