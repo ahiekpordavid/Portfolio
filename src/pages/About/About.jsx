@@ -32,7 +32,7 @@ const About = () => {
                 <div>
                     <h6><FormattedMessage id="about.education.YYYY1"/></h6>
                     <p><FormattedMessage id="about.education.school1"/></p>
-                    <h4>Bachelor of Science in Computer Science</h4>
+                    <h4><FormattedMessage id="about.education.description1"/></h4>
                 </div>
             </div>
         </div>

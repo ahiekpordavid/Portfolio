@@ -21,6 +21,7 @@
   "about.education.title":"Education",
   "about.education.YYYY1":"SEP 2017 – JUN 2021",
   "about.education.school1":"Wuchang University of Technology | China, Wuhan",
+  "about.education.description1":"Bachelor of Science in Computer Science",
   "about.education.YYYY2":"YYYY",
   "about.education.school2":"School",
   "about.cv":"Download CV",
@@ -37,7 +38,7 @@
   "service.backendDevelopment.name":"Backend Development",
   "service.backendDevelopment.description":"Building RESTful APIs with Express.js and  MongoDB for storing and retrieving data.",
   "service.ui/ux.name":" UI/UX Principles",
-  "service.ui/ux.description":"Design",
+  "service.ui/ux.description":"implementing user-centered, responsive, and accessible web interfaces while adhering to design consistency, interactivity, and performance optimization principles to create a positive and engaging user experience.",
 
   "portfolio.title":"My Work",
   "portfolio.portfolioWebsite.name":"Portfolio Website",
