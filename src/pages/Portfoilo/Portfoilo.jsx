@@ -1,8 +1,8 @@
 import React from "react";
 import "./Portfoilo.css";
 import { BsGithub } from "react-icons/bs";
-import { BiLinkExternal } from "react-icons/bi";
-import translate from "../../media/OIP.jpeg";
+// import { BiLinkExternal } from "react-icons/bi";
+// import translate from "../../media/OIP.jpeg";
 import portfolio from "../../media/portfolio.png";
 import { FormattedMessage } from "react-intl";
 import { useTheme } from "../../utils/theme/ThemeContext";
@@ -16,13 +16,13 @@ const Portfoilo = () => {
       <FormattedMessage id="portfolio.portfolioWebsite.description" />,
       gitLink: "https://github.com/ahiekpordavid/Portfolio",
     },
-    {
-      icon: translate,
-      name: <FormattedMessage id="service.apiIntegration.name" />,
-      description: <FormattedMessage id="service.apiIntegration.description" />,
-      gitLink: "",
-      appLink: <BiLinkExternal />,
-    }
+    // {
+    //   icon: translate,
+    //   name: <FormattedMessage id="service.apiIntegration.name" />,
+    //   description: <FormattedMessage id="service.apiIntegration.description" />,
+    //   gitLink: "",
+    //   appLink: <BiLinkExternal />,
+    // }
   ];
   const { theme } = useTheme();
   const buttonStyles = {
