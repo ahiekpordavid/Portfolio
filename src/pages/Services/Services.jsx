@@ -6,6 +6,7 @@ import responsive from "../../media/responsive.png";
 import translate from "../../media/translate.png";
 import ux from "../../media/ux.png";
 import { FormattedMessage } from "react-intl";
+import { useTheme } from "../../utils/theme/ThemeContext";
 
 const Services = () => {
   const data = [
@@ -46,12 +47,23 @@ const Services = () => {
       <FormattedMessage id="service.ui/ux.description"/>,
     },
   ];
+  const { theme } = useTheme();
+  const buttonStyles = {
+    color: theme.secondaryColor,
+    backgroundColor: theme.backgroundColor,
+    boxShadow: theme.boxShadow,
+    backdropFilter: theme.backdropFilter,
+  };
+  const skillItemStyles = {
+    backgroundColor: theme.secondaryBackground,
+
+  };
   return (
-    <div className="skill" id="skills">
+    <div className="skill" id="skills" style={buttonStyles}>
       <h1><FormattedMessage id="service.title"/></h1>
       <div className="skillContainer">
         {data.map((item) => (
-          <div className="skillItem" key={item.name}>
+          <div className="skillItem" key={item.name} style={skillItemStyles}>
             <div>{item.icon}</div>
             <h2>{item.name}</h2>
             <p>{item.description}</p>

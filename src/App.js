@@ -15,6 +15,7 @@ import messages_fi from "./utils/lang/locales/fi_FI.json";
 import messages_nl from "./utils/lang/locales/nl_NL.json";
 import messages_pt from "./utils/lang/locales/pt_PT.json";
 import messages_zh from "./utils/lang/locales/zh_ZH.json";
+import { useTheme } from './utils/theme/ThemeContext';
 
 function App() {
   const [locale, setLocale] = useState("en");
@@ -31,8 +32,12 @@ function App() {
   const handleSelectLanguage = (selectedLocale) => {
     setLocale(selectedLocale);
   };
+  const { theme} = useTheme();
+  const buttonStyles = {
+    background: theme.primaryColor,
+  };
   return (
-    <div className="App">
+    <div style={buttonStyles}>
       <IntlProvider locale={locale} messages={messages[locale]}>
         <Navbar onSelectLanguage={handleSelectLanguage}/>
         <Home />

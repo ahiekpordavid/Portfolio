@@ -5,6 +5,7 @@ import { BiLinkExternal } from "react-icons/bi";
 import translate from "../../media/OIP.jpeg";
 import portfolio from "../../media/portfolio.png";
 import { FormattedMessage } from "react-intl";
+import { useTheme } from "../../utils/theme/ThemeContext";
 
 const Portfoilo = () => {
   const data = [
@@ -23,8 +24,15 @@ const Portfoilo = () => {
       appLink: <BiLinkExternal />,
     }
   ];
+  const { theme } = useTheme();
+  const buttonStyles = {
+    color: theme.secondaryColor,
+    backgroundColor: theme.backgroundColor,
+    boxShadow: theme.boxShadow,
+    backdropFilter: theme.backdropFilter,
+  };
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="portfolio" id="portfolio" style={buttonStyles}>
       <h1><FormattedMessage id="portfolio.title" /></h1>
       <div className="portfolioContainer">
         {data.map((item) => (

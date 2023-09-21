@@ -8,10 +8,14 @@
 .homeText h3 {
   font-size: 42px;
   line-height: 20px;
+  position: relative;
+  z-index: 2;
 }
 .homeText small {
   font-size: 32px;
   font-weight: 400;
+  position: relative;
+  z-index: 2;
 }
 .homeText span:nth-child(2) {
   color: rgb(8, 210, 11);
@@ -20,11 +24,13 @@
   width: 694px;
   line-height: 25px;
   font-size: 16px;
+  position: relative;
+  z-index: 2;
 }
 .langIcons {
   object-fit: contain;
   position: fixed;
-  z-index: -1;
+  z-index: 0;
   top: 200px;
   right: 140px;
   width: 700px;
@@ -76,7 +82,7 @@
     .langIcons {
       margin-top: 20px;
       position:sticky;
-      z-index: 2;
+      z-index: 0;
       top: 0px;
       right: 0px;
     }

@@ -79,19 +79,7 @@
   min-width: 96%;
   border-radius: 5px;
 }
-.contactMessage textarea {
-  background-color: rgb(20, 20, 20);
-  outline: none;
-  border: none;
-  margin-bottom: 20px;
-  padding: 20px;
-  color: white;
-  font-size: 16px;
-  min-height: 150px;
-  max-height: 150px;
-  min-width: 96%;
-  border-radius: 5px;
-}
+
 .contactMessage button {
   cursor: pointer;
   border: none;

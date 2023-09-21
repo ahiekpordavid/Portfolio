@@ -4,6 +4,7 @@ import { SiMinutemailer, SiInstagram, SiTwitter } from "react-icons/si";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { FormattedMessage, useIntl } from "react-intl";
 import CV from "../../media/David Kwashie Ahiekpor.pdf";
+import { useTheme } from "../../utils/theme/ThemeContext";
 
 const Contact = () => {
   const intl = useIntl();
@@ -53,8 +54,19 @@ const Contact = () => {
       [name]: value,
     });
   };
+  const { theme } = useTheme();
+  const buttonStyles = {
+    color: theme.secondaryColor,
+    backgroundColor: theme.backgroundColor,
+    boxShadow: theme.boxShadow,
+    backdropFilter: theme.backdropFilter,
+  };
+  const inputStyles = {
+    color: theme.secondaryColor,
+    backgroundColor: theme.secondaryBackground,
+  };
   return (
-    <div className="contacts">
+    <div className="contacts" style={buttonStyles}>
       <div className="contact">
         <h1>
           <FormattedMessage id="contact.title" />
@@ -87,6 +99,7 @@ const Contact = () => {
             value={formData.Name}
             onChange={handleInputChange}
             placeholder={intl.formatMessage({ id: "contact.placeholder.name" })}
+            style={inputStyles}
           />
           <input
             type="email"
@@ -96,6 +109,7 @@ const Contact = () => {
             placeholder={intl.formatMessage({
               id: "contact.placeholder.email",
             })}
+            style={inputStyles}
           />
           <textarea
             name="Message"
@@ -107,6 +121,7 @@ const Contact = () => {
             placeholder={intl.formatMessage({
               id: "contact.placeholder.message",
             })}
+            style={inputStyles}
           ></textarea>
           <button type="submit">
           {isSubmitting ? 'Submitting...' : <FormattedMessage id="contact.button.submit" />}

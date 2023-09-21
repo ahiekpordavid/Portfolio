@@ -3,10 +3,18 @@ import "./About.css";
 import me from "../../media/me1.png";
 import CV from "../../media/David Kwashie Ahiekpor.pdf"
 import { FormattedMessage } from "react-intl";
+import { useTheme } from '../../utils/theme/ThemeContext';
 
 const About = () => {
+  const { theme } = useTheme();
+  const buttonStyles = {
+    color: theme.secondaryColor,
+    backgroundColor: theme.backgroundColor,
+    boxShadow: theme.boxShadow,
+    backdropFilter: theme.backdropFilter,
+  };
   return (
-    <div className="about">
+    <div className="about" style={buttonStyles} >
       <div className="aboutImage">
         <img src={me} alt="Me" className="meImage"/>
       </div>
