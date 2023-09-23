@@ -76,4 +76,24 @@
         width: 100%;
         height: 100%;
       }
+      .aboutTabs {
+      flex-direction: column;
+      }
+      .aboutTab {
+        margin-top:30px;
+      }
+      .aboutTab h6{
+        margin-top: 30px;
+      }
+      .aboutText a {
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: white;
+        background: rgb(6, 186, 9);
+      
+        text-decoration: none;
+      }
 }
