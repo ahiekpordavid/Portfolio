@@ -12,6 +12,8 @@ const About = () => {
     backgroundColor: theme.backgroundColor,
     boxShadow: theme.boxShadow,
     backdropFilter: theme.backdropFilter,
+    opacity:theme.opacity,
+    backgroundImage:theme.backgroundImage,
   };
   return (
     <div className="about" style={buttonStyles}>

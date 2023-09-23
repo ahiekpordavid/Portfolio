@@ -30,6 +30,8 @@ const Portfoilo = () => {
     backgroundColor: theme.backgroundColor,
     boxShadow: theme.boxShadow,
     backdropFilter: theme.backdropFilter,
+    opacity:theme.opacity,
+    backgroundImage:theme.backgroundImage,
   };
   return (
     <div className="portfolio" id="portfolio" style={buttonStyles}>

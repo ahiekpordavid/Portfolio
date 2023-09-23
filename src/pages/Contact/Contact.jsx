@@ -60,6 +60,8 @@ const Contact = () => {
     backgroundColor: theme.backgroundColor,
     boxShadow: theme.boxShadow,
     backdropFilter: theme.backdropFilter,
+    opacity:theme.opacity,
+    backgroundImage:theme.backgroundImage,
   };
   const inputStyles = {
     color: theme.secondaryColor,

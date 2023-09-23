@@ -53,6 +53,8 @@ const Services = () => {
     backgroundColor: theme.backgroundColor,
     boxShadow: theme.boxShadow,
     backdropFilter: theme.backdropFilter,
+    opacity:theme.opacity,
+    backgroundImage:theme.backgroundImage,
   };
   const skillItemStyles = {
     backgroundColor: theme.secondaryBackground,

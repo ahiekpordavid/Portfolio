@@ -34,7 +34,10 @@ function App() {
   };
   const { theme} = useTheme();
   const buttonStyles = {
-    background: theme.primaryColor,
+    background: theme.ThemeBackgroundColor,
+    opacity:theme.opacity,
+    backgroundImage:theme.backgroundImage,
+  
   };
   return (
     <div style={buttonStyles}>
