@@ -117,3 +117,17 @@
     margin-left: 0px;
   }
 }
+@media screen and (max-width: 480px) {
+  .contacts {
+    margin: 80px 20px;
+    padding: 20px;
+  }
+  .contactMessage input {
+    padding: 10px 7px;
+    width: 96%;
+  }
+  .contactMessage textarea {
+    padding: 10px 7px;
+    min-width: 96%;
+  }
+}

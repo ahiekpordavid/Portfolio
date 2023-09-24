@@ -99,3 +99,9 @@
     margin: 40px 40px;
   }
 }
+@media screen and (max-width: 480px) {
+  .skill {
+    margin: 40px 20px;
+    padding: 20px;
+  }
+}
