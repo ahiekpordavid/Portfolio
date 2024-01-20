@@ -1,16 +1,7 @@
-/* Add the following styles in your CSS file or a style block */
-
-.language-selector {
-  display: inline-block;
-  z-index: 1;
-  margin-left: 40px;
-  align-items: center;
-}
-
 .language-dropdown {
   padding:8px 12px;
   appearance: none;
-  background-color: rgb(2, 162, 5);
+  background-color: transparent;
   border:none;
   outline: none;
   border-radius: 4px;
@@ -19,41 +10,4 @@
   cursor: pointer;
 }
 
-.language-dropdown option {
-  padding: 4px;
-}
-.text-large {
-  display: block;
-}
-.text-short {
-  display: none;
-}
-@media only screen and (max-width: 425px) {
-  .language-selector {
-    display: inline-block;
-    z-index: 1;
-    margin-left: 20px;
 
-  }
-  .language-dropdown {
-    padding: 6px 8px 6px 8px;
-    appearance: none;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    outline: none;
-
-    border-radius: 4px;
-    font-size: 12px;
-    color: #333;
-    cursor: pointer;
-  }
-  .icon-container {
-    display: none;
-  }
-  .text-large {
-    display: none;
-  }
-  .text-short {
-    display: block;
-  }
-}

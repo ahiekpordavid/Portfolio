@@ -1,107 +1,27 @@
-.skill {
-  display: flex;
-  flex-direction: column;
-  margin: 40px 140px;
-  background: rgba(0, 0, 0, 0.80);
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15) inset;
-  backdrop-filter: blur(5px);
-}
-.skill h1 {
-  font-size: 48px;
-}
-.skillContainer {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-}
 .skillItem {
-  padding: 30px;
-  width: 400px;
-  background: rgb(20, 20, 20);
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 50px;
+  background: rgba(2, 2, 2, 0.6);
 }
 .skillItem:hover {
-  background: rgb(6, 186, 9);
-  transition: background 0.5s ease-in-out;
-}
-.skillItem h2 {
-  font-size: 28px;
-}
-.skillItem p {
-  font-size: 14px;
-  line-height: 30px;
+  background: rgba(0, 0, 0, 0.500);
 }
 .skillIcons {
   object-fit: contain;
   height: 50px;
 }
-@media screen and (max-width: 1660px) {
-  .skillItem {
-    width: 300px;
-  }
+.skill{
+  background: url('/src/media/mepic.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-@media screen and (max-width: 1360px) {
-  .skillItem {
-    width: 420px;
-  }
-  .skillContainer {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-}
-@media screen and (max-width: 1245px) {
-  .skillItem {
-    width: 380px;
-  }
-}
-@media screen and (max-width: 1170px) {
-  .skillItem {
-    width: 350px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .skillItem {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .skill {
-    margin: 40px 100px;
-  }
-  .skillItem {
-    width: 290px;
-  }
-}
-@media screen and (max-width: 920px) {
-  .skillContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .skillItem {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 870px) {
-  .skill {
-    margin: 40px 80px;
-  }
-  .skillItem {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .skill {
-    margin: 40px 40px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .skill {
-    margin: 40px 20px;
-    padding: 20px;
-  }
+.skill::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1; 
 }

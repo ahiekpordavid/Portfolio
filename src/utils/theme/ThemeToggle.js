@@ -1,15 +1,15 @@
 import React from 'react'
 import { useTheme } from './ThemeContext';
-import {VscColorMode} from "react-icons/vsc"
+import { MdOutlineLightMode } from "react-icons/md";
 
 const ThemeToggle = () => {
-  const { theme, toggleTheme } = useTheme();
+  const {  toggleTheme } = useTheme();
   return (
     <button
-      style={{ backgroundColor: theme.secondaryColor, color: theme.primaryColor,marginLeft:"20px" }}
+      style={{marginLeft:"20px" }}
       onClick={toggleTheme}
     >
-      <VscColorMode style={{fontSize:"20px"}}/>
+      <MdOutlineLightMode style={{fontSize:"20px", background:"transparent"}}/>
     </button>
   );
 }

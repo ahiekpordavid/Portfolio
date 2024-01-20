@@ -1,41 +1,10 @@
-.Navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 140px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  background-color: black;
-}
 
-.logo {
-  width: 140px;
-  object-fit: contain;
-background-color: black;
-padding: 5px;
-}
-.largeScreenMenus{
-    display: block;
-}
-.menuItem ,.menuItemSmall{
+.menuItemSmall{
   font-size: 16px;
   font-weight: 500;
   margin-left: 40px;
   padding: 2px;
   cursor: pointer;
-}
-.menuItem:hover {
-  border-bottom: 2px solid greenyellow;
-  transition: border-bottom 0.3s ease-out, color 0.3s ease-out;
-  transition-delay: 0.1s;
-}
-.toggleMenus {
-  display: none;
-  font-size: 25px;
 }
 .smallScreenMenus {
   position: absolute;
@@ -48,42 +17,10 @@ padding: 5px;
     padding: 10px 30px;
     margin-bottom: 0.5px;
     border-radius: 5px;
-    background: rgb(4, 85, 0);
-    border-bottom: 1px solid rgb(0, 98, 29);
+    background: rgb(12, 175, 3);
+    border-bottom: 1px solid rgb(0, 162, 49);
 }
 .menuItemSmall:hover{
     background: rgb(7, 124, 1);
     scale: 1.1;
-}
-@media screen and (max-width:1024px){
-    .Navbar {
-        padding: 20px 100px;
-      }
-}
-@media screen and (max-width:870px){
-    .Navbar {
-        padding: 20px 80px;
-      }
-      .menuItem{
-        margin-left: 25px
-      }
-}
-@media screen and (max-width:768px){
-    .Navbar {
-        padding: 20px 40px;
-      }
-    .largeScreenMenus{
-        display: none;
-    }
-    .toggleMenus {
-        display: flex;
-      }
-}
-@media screen and (max-width:375px){
-    .Navbar {
-        padding: 20px 40px;
-      }
-      .smallScreenMenus {
-        right: 40px;
-      }
 }

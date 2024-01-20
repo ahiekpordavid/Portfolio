@@ -2,81 +2,24 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import logo from "../../media/logo.png";
-import { CgMenuGridO } from "react-icons/cg";
+import { RxHamburgerMenu } from "react-icons/rx";
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
 import { FormattedMessage } from "react-intl";
-import ThemeToggle from "../../utils/theme/ThemeToggle";
-import { useTheme } from "../../utils/theme/ThemeContext";
+// import ThemeToggle from "../../utils/theme/ThemeToggle";
 
 const Navbar = ({ onSelectLanguage }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const handleMenuToggle = () => {
     setToggleMenu(!toggleMenu);
   };
-  const { theme } = useTheme();
-  const inputStyles = {
-    color: theme.secondaryColor,
-    backgroundColor: theme.navBackgound,
-  };
-  const navStyle = {
-    backgroundColor: theme.logo,
-  };
+
   return (
-    <div className="Navbar" style={inputStyles}>
-      <img src={logo} alt="Logo" className="logo" style={navStyle}/>
-      <div className="largeScreenMenus">
-        <Link
-          className="menuItem"
-          to="home"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          <FormattedMessage id="navbar.home" />
-        </Link>
-        <Link
-          className="menuItem"
-          to="about"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          <FormattedMessage id="navbar.about" />
-        </Link>
-        <Link
-          className="menuItem"
-          to="skills"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          <FormattedMessage id="navbar.skills" />
-        </Link>
-        <Link
-          className="menuItem"
-          to="portfolio"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          <FormattedMessage id="navbar.portfolio" />
-        </Link>
-        <Link
-          className="menuItem"
-          to="contact"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
-          <FormattedMessage id="navbar.contact" />
-        </Link>
+    <div className="flex flex-row justify-between fixed z-20 top-0 left-0 right-0 md:px-[140px] sm:px-[90px] px-[50px] py-[20px]">
+      <img src={logo} alt="Logo" className="w-[80px] sm:w-[110px] object-contain "/>
+      <div className="flex flex-row items-center">
         <LanguageSelector onSelectLanguage={onSelectLanguage} />
-        <ThemeToggle/>
-      </div>
-      <div className="toggleMenus">
-        <CgMenuGridO onClick={handleMenuToggle} />
-        <LanguageSelector onSelectLanguage={onSelectLanguage} />
-        <ThemeToggle/>
+        <RxHamburgerMenu onClick={handleMenuToggle} fontSize={30} fontWeight={100}/>
+        {/* <ThemeToggle/> */}
       </div>
       {toggleMenu && (
         <div className="smallScreenMenus">

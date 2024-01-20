@@ -1,28 +1,8 @@
 import React from "react";
 import "./LanguageSelector.css";
 
-const useMediaQuery = (query) => {
-  const [matches, setMatches] = React.useState(
-    () => window.matchMedia(query).matches
-  );
-
-  React.useEffect(() => {
-    const mediaQuery = window.matchMedia(query);
-    const handleChange = (event) => {
-      setMatches(event.matches);
-    };
-
-    mediaQuery.addEventListener("change", handleChange);
-    return () => {
-      mediaQuery.removeEventListener("change", handleChange);
-    };
-  }, [query]);
-
-  return matches;
-};
-
 const LanguageSelector = ({ onSelectLanguage }) => {
-  const isSmallScreen = useMediaQuery("(max-width: 425px)");
+  const isSmallScreen = true;
 
   const languageOptions = [
     { value: "en", label: isSmallScreen ? "EN" : "English" },

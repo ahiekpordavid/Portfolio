@@ -1,29 +1,34 @@
 import React from "react";
-import "./Home.css";
-import langIcons from "../../media/langIcons2.png";
+import langIcons from "../../media/hero.jpg";
 import { FormattedMessage } from "react-intl";
-import { useTheme } from '../../utils/theme/ThemeContext';
-
 
 const Home = () => {
-  const { theme } = useTheme();
-  const buttonStyles = {
-    color: theme.secondaryColor
-  };
   return (
-    <div className="Home" id="home" style={buttonStyles}s>
-      <div className="homeText">
-        <h3>
-          <small><FormattedMessage id="home.title.hello"/></small>  <FormattedMessage id="home.title.i'm"/> <span><FormattedMessage id="home.title.name"/></span>
-        </h3>
-        <h3>
-        <FormattedMessage id="home.title.job"/>
-        </h3>
-        <p>
-        <FormattedMessage id="home.about"/>
-        </p>
+    <div id="home" className=" h-[95vh] relative" >
+      <div className="flex flex-row absolute justify-center items-center h-[90vh] z-10">
+        <div className="flex flex-1"></div>
+        <div className="flex flex-1 flex-col pr-10">
+          <h3 className="text-2xl">
+            <small className="mr-3">
+              <FormattedMessage id="home.title.hello" />
+            </small>
+            <FormattedMessage id="home.title.i'm"/>  <span>
+              <FormattedMessage id="home.title.name" />
+            </span>
+          </h3>
+          <h3  className="text-5xl mt-5">
+            <FormattedMessage id="home.title.job" />
+          </h3>
+          <p className="text-2xl mt-10 font-extralight ">
+            <FormattedMessage id="home.about" />
+          </p>
+        </div>
       </div>
-      <img src={langIcons} alt="display" className="langIcons" />
+      <img
+        src={langIcons}
+        alt="display"
+        className="w-[100%] h-[95vh] top-0 right-0 left-0 bottom-0 object-cover fixed opacity-40"
+      />
     </div>
   );
 };
